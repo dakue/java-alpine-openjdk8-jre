@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t dakue/java-alpine-openjdk8-jre .
+
+test:
+  override:
+    - docker run -ri dakue/java-alpine-openjdk8-jre
