@@ -8,4 +8,4 @@ dependencies:
 
 test:
   override:
-    - docker run -ri dakue/java-alpine-openjdk8-jre
+    - docker run -it dakue/java-alpine-openjdk8-jre
